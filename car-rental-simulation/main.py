@@ -55,8 +55,12 @@ def main():
             myWindow.tracer(True)
             myWindow.exitonclick()
             myWindow.mainloop()
-    except KeyboardInterrupt:
-        print('Keyboard Interrupt.')
+    except:
+        if KeyboardInterrupt:
+            print()
+            print("Thank you for visiting our car rental shop")
+        else:   
+            exit()
 
 
 if __name__ == "__main__":
