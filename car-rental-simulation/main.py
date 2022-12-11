@@ -40,9 +40,9 @@ def main():
                 env.the_background()
                 env.the_sun()
                 if choice == "A" or choice == "a":
-                    suv.printSUV()
-                elif choice == "B" or choice == "b":
                     car.printCar()
+                elif choice == "B" or choice == "b":
+                    suv.printSUV()
                 elif choice == "C" or choice == "c":
                     truck.printTruck()
                 elif choice == "Q" or choice == "q":

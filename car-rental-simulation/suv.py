@@ -45,17 +45,17 @@ class SUV(Automobile):
         self.my_setpos(330, -100)
 
         left(92)
-        forward(100*self.scale)  
+        self.my_forward(100)  
         
         left(30)
-        circle(400*self.scale, 20, 30)
+        self.my_circle(400, 20, 30)
 
         self.my_setpos(239, 100)
         self.my_setpos(0, 100)
         self.my_setpos(-80, 30)
         self.my_setpos(-200, 30)
         left(90)
-        circle(400*self.scale, 15, 30)
+        self.my_circle(400, 15, 30)
         self.my_setpos(-250, -100)
         left(-105)
         end_fill()
@@ -63,13 +63,13 @@ class SUV(Automobile):
         # !st wheel
         penup()
         self.my_setpos(-100, -80)
-        dot((self.scale*120), "Black")
+        self.my_dot(120, "Black")
         pendown()
 
         # 2nd wheel
         penup()
         self.my_setpos(240, -80)
-        dot((self.scale*120), "Black")
+        self.my_dot(120, "Black")
         pendown()
         
         # windows
@@ -80,11 +80,11 @@ class SUV(Automobile):
         pendown()
         self.my_setpos(285, 30)
         right(50)
-        forward(10*self.scale)
+        self.my_forward(10)
         left(40)
-        circle(400*self.scale, 10, 30)
+        self.my_circle(400, 10, 30)
         left(38)
-        forward(230*self.scale)
+        self.my_forward(230)
         left(20)
         self.my_setpos(-60, 30)
         end_fill()
@@ -100,15 +100,15 @@ class SUV(Automobile):
         pendown()
 
         left(70)
-        forward(55*self.scale)
+        self.my_forward(55)
         left(70)
-        circle(-46*self.scale, 100, 30)
+        self.my_circle(-46, 100, 30)
         left(120)
-        forward(204*self.scale)
+        self.my_forward(204)
         left(90)
-        circle(-80*self.scale, 81, 30)
+        self.my_circle(-80, 81, 30)
         left(81.04)
-        forward(100*self.scale)
+        self.my_forward(100)
         
         ht()
 

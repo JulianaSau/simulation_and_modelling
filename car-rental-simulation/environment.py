@@ -11,7 +11,7 @@ class Environment():
         self.offset = 0
     
     def initialiseTurtle(self):
-        title("First 2D vehicle with python")
+        title("First 2D vehicles with python")
         speed(0)
         pensize(2)
         hideturtle()

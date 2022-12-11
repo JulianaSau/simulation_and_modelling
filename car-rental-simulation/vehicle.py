@@ -74,3 +74,12 @@ class Automobile:
 
     def my_setpos(self, x_offset, y_offset):
         goto(self.x + self.scale*x_offset, self.y + self.scale*y_offset)
+        
+    def my_forward(self, offset):
+        forward(offset * self.scale)
+        
+    def my_circle(self, radius, archlength, spread):
+        circle((radius)* self.scale, archlength, spread)
+        
+    def my_dot(self, radius, color):
+        dot((radius)* self.scale,color)
