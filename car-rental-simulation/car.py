@@ -114,7 +114,7 @@ class Car(Automobile):
             #Create an SUV object for a used 2000
         #Volvo with 30, 000 miles, priced
         #at $18,500, with 5 passenger capacity.
-        car = Car('BMW', 2001, 70000, 15000.0, 4)
+        car = Car('BMW', 2001, 70000, 15000.0, 2)
 
         print('USED CAR INVENTORY')
         print('=====================')

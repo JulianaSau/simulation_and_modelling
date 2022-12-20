@@ -11,9 +11,9 @@ HEIGHT = 500
 def main():
     try:
         # initalise turtle variables        
-        car = Car('BMW', 2001, 70000, 15000.0, 4)
+        car = Car('BMW', 2001, 70000, 15000.0, 2)
         truck = Truck('Toyota', 2002, 40000, 12000.0, '4WD')
-        suv = SUV('Volvo', 2000, 30000, 18500.0, 5)
+        suv = SUV('Volvo', 2000, 30000, 18500.0, 4)
 
         main_menu = True
         # put car code here

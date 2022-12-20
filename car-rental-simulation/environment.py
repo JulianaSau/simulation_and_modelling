@@ -135,7 +135,7 @@ class Environment():
 
     def drawFlowers(self):
 
-        for i in range(0, 15):
+        for i in range(0, 6):
             self.offset += 50
             self.drawFlower()
             penup()
