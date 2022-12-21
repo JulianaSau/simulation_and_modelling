@@ -117,19 +117,18 @@ class SUV(Automobile):
         #Create an SUV object for a used 2000
         #Volvo with 30, 000 miles, priced
         #at $18,500, with 5 passenger capacity.
-        suv = SUV('Volvo', 2000, 30000, 18500.0, 5)
 
         print('USED SUV INVENTORY')
         print('=====================')
 
         #Display the SUV's data
         print('The following SUV is in inventory.')
-        print('Make:', suv.get_make())
-        print('Model:', suv.get_model())
-        print('Mileage:', suv.get_mileage())
-        print('Price', suv.get_price())
-        print('Passenger Capacity:', suv.get_pass_cap())
-        suv.drawSuv()
+        print('Make:', self.get_make())
+        print('Model:', self.get_model())
+        print('Mileage:', self.get_mileage())
+        print('Price', self.get_price())
+        print('Passenger Capacity:', self.get_pass_cap())
+        self.drawSuv()
 
 
 

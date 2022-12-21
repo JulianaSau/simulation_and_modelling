@@ -111,21 +111,20 @@ class Car(Automobile):
         ht()
     
     def printCar(self):
-            #Create an SUV object for a used 2000
-        #Volvo with 30, 000 miles, priced
-        #at $18,500, with 5 passenger capacity.
-        car = Car('BMW', 2001, 70000, 15000.0, 2)
+        #Create a Car object for a used 2001 BMW
+        #with 70,000 miles, priced at $15,000, with
+        #2 doors.
 
         print('USED CAR INVENTORY')
         print('=====================')
 
-        #Display the car's data.
+        # Display the car's data.
         print('The following car is in inventory:')
-        print('Make:', car.get_make())
-        print('Model:', car.get_model())
-        print('Mileage', car.get_mileage())
-        print('Price', car.get_price())
-        print('Number of doors:', car.get_doors())
+        print('Make:', self.get_make())
+        print('Model:', self.get_model())
+        print('Mileage', self.get_mileage())
+        print('Price', self.get_price())
+        print('Number of doors:', self.get_doors())
         print()
-        car.drawCar()
+        self.drawCar()
 

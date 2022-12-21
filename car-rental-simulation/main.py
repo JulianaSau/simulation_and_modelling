@@ -2,19 +2,13 @@ from turtle import *
 from suv import *
 from car import *
 from truck import *
-import sys
 from environment import Environment
 
 WIDTH = 700
 HEIGHT = 500
 
 def main():
-    try:
-        # initalise turtle variables        
-        car = Car('BMW', 2001, 70000, 15000.0, 2)
-        truck = Truck('Toyota', 2002, 40000, 12000.0, '4WD')
-        suv = SUV('Volvo', 2000, 30000, 18500.0, 4)
-
+    try:      
         main_menu = True
         # put car code here
         while True:
@@ -40,11 +34,38 @@ def main():
                 env.the_background()
                 env.the_sun()
                 if choice == "A" or choice == "a":
-                    car.printCar()
+                    make = input("Enter car make: ")
+                    model = input("Enter car model: ")
+                    mileage = input("Enter car mileage: ")
+                    price = input("Enter car price: ")
+                    doors = input("Enter number of doors : ")
+                    if (doors and make and model and price and mileage):
+                        car = Car(make, model, mileage, price, doors)
+                        car.printCar()
+                    else:
+                        print("Please enter all fields")
                 elif choice == "B" or choice == "b":
-                    suv.printSUV()
+                    make = input("Enter suv make: ")
+                    model = input("Enter suv model: ")
+                    mileage = input("Enter suv mileage: ")
+                    price = input("Enter suv price: ")
+                    passenger_capacity = input("Enter suv passenger capacity : ")
+                    if (mileage and make and model and price and passenger_capacity):
+                        suv = SUV(make, model, mileage, price, passenger_capacity)
+                        suv.printSUV()
+                    else:
+                        print("Please enter all fields")
                 elif choice == "C" or choice == "c":
-                    truck.printTruck()
+                    make = input("Enter truck make: ")
+                    model = input("Enter truck model: ")
+                    mileage = input("Enter truck mileage: ")
+                    price = input("Enter truck price: ")
+                    drive_type = input("Enter truck drive type : ")
+                    if (mileage and make and model and price and drive_type):
+                        truck = Truck(make, model, mileage, price, drive_type)
+                        truck.printTruck()
+                    else:
+                        print("Please enter all fields")
                 elif choice == "Q" or choice == "q":
                         exit()
                 else:

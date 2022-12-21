@@ -145,17 +145,16 @@ class Truck(Automobile):
         #Create a Truck object for a used 2002
         #Toyota pickup with 40 000 miles, priced
         #at $12, 000, with a 4-wheel drive.
-        truck = Truck('Isuzu', 2002, 40000, 12000.0, '4WD')
 
         print('USED TRUCK INVENTORY')
         print('=====================')
 
         #Display the truck's data.
         print('The following truck is in inventory:')
-        print('Make:', truck.get_make())
-        print('Model:', truck.get_model())
-        print('Mileage:', truck.get_mileage())
-        print('Price:', truck.get_price())
-        print('Drive type:', truck.get_drive_type())
+        print('Make:', self.get_make())
+        print('Model:', self.get_model())
+        print('Mileage:', self.get_mileage())
+        print('Price:', self.get_price())
+        print('Drive type:', self.get_drive_type())
         print()
-        truck.drawTruck()
+        self.drawTruck()
